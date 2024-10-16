@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Alice";
+    src: url(./fonts/Alice-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+:root {
+    --neutral-2: #353945;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 80px 136px;
+}
+
+h1 {
+    font-family: Alice;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: capitalize;
+    color: var(--neutral-2);
+    text-align: center;
+}
+
+.green {
+    color: #04B90B;
+}
+
+h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    text-align: center;
+    color: #777E90;
+    margin-top: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.container__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    border-radius: 8px;
+    padding: 6px;
+    width: 672px;
+    height: 74px;
+    box-shadow: 0 3px 9px 0 rgba(1, 5, 20, 0.05);
+    background: #fff;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.greencard {
+    border-radius: 8px;
+    width: 196px;
+    height: 62px;
+    background: #43cb48;
+    color: #fff;
+    padding-left: 15.5px;
+}
+
+.container__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 74px;
+    margin-top: 80px;
+}
+
+.child-container {
+    border-radius: 15px;
+    padding: 24px 0px;
+    width: 340px;
+    height: 481px;
+    box-shadow: 0 10px 27px 0 rgba(53, 53, 53, 0.05);
+    background: #fff;
+
+}
+
+.child-container__text {
+    font-family: Alice;
+    font-weight: 100;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+    color: var(--neutral-2);
+}
+
+.child-container__content {
+    padding: 24px;
+}
+
+.secondcontent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #353945;
+    margin-top: 12px;
+}
+
+.thirdcontent {
+    display: flex;
+    gap: 69px;
+    margin-top: 16px;
+}
+
+.thirdcontent__money {
+    font-family: Alice;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #04B90B;
+}
+
+button {
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    width: 117px;
+    height: 40px;
+    background: #04B90B;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FCFCFD;
+}
+
+.greencardadaptive {
+    display: none;
+}
+
+@media (max-width:1024px) {
+    body {
+        padding: 80px 52px;
+    }
+
+    .container__bottom {
+        display: flex;
+        justify-content: flex-start;
+        gap: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .child-container {
+
+
+        width: 285px;
+        height: 384px;
+
+    }
+
+    .child-container>img {
+        padding: 0px 28px;
+        width: 283px;
+        height: 200px;
+        margin-top: 12px;
+    }
+
+    .child-container__text {
+
+        font-size: 24px;
+        letter-spacing: -0.01em;
+        word-wrap: none;
+    }
+
+    .secondcontent {
+        font-size: 14px;
+        width: 190px;
+        height: 21px;
+        white-space: nowrap;
+    }
+
+    .thirdcontent__money {
+        font-size: 28px;
+        line-height: 43%;
+        margin-top: 12px;
+    }
+
+    button {
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 143%;
+        width: 117px;
+        height: 36px;
+    }
+}
+
+@media (max-width:374px) {
+    h1 {
+        font-size: 32px;
+
+    }
+
+    h2 {
+        font-size: 18px;
+        min-height: 81px;
+    }
+
+    body {
+        padding: 40px 44px;
+    }
+
+    .container__nav {
+        display: none;
+
+    }
+
+    .greencardadaptive {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 0px 12px;
+        width: 316px;
+        height: 62px;
+        background: #43cb48;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+    }
+
+    .greencardadaptive__child {
+        display: flex;
+        gap: 8px;
+    }
+
+    .child-container>img {
+        padding: 0px 28px;
+        width: 283px;
+        height: 200px;
+        margin-top: 12px;
+    }
+
+    .child-container__text {
+
+        font-size: 24px;
+        letter-spacing: -0.01em;
+        word-wrap: none;
+    }
+
+    .secondcontent {
+        font-size: 14px;
+        width: 190px;
+        height: 21px;
+        white-space: nowrap;
+    }
+
+    .thirdcontent__money {
+        font-size: 28px;
+        line-height: 43%;
+        margin-top: 12px;
+    }
+
+    button {
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 143%;
+        width: 117px;
+        height: 36px;
+    }
+}
